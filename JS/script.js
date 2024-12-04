@@ -57,8 +57,8 @@ document.getElementById("calculateBtn").addEventListener("click", function() { /
     const height = document.getElementById("height").value;
 
     // Check if input fields are filled
-    if (!weight || !height) {
-        alert("Please fill in both weight and height.");
+    if (!age || !weight || !height) {
+        alert("Silahkan isi kolom yang tersedia.");
         return;
     }
 
