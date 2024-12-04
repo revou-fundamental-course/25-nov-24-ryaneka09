@@ -44,18 +44,23 @@ let calculatorBmi = function (weight, height) {
         message = "Kamu belum mengisi angka pada inputan";
     }
 
-    // return an object using the values
+    // return an object using both values
     return {bmi: bmi, message: message, description: description};
 }
 
 
 // Add even listener to form
-document.getElementById("bmiform").addEventListener("submit", function(event) {
-    event.preventDefault(); // prevent the form from submitting
+document.getElementById("calculateBtn").addEventListener("click", function() { // prevent the form from submitting
 
     // get the values of the input fields
     const weight = document.getElementById("weight").value;
     const height = document.getElementById("height").value;
+
+    // Check if input fields are filled
+    if (!weight || !height) {
+        alert("Please fill in both weight and height.");
+        return;
+    }
 
     // Call the BMI calculator function
     const {bmi, message, description} = calculatorBmi(weight, height);
@@ -87,6 +92,27 @@ document.getElementById("bmiform").addEventListener("submit", function(event) {
         resultElement.style.color = "darkred";
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Add event listener for reset button
 document.getElementById("bmiform").addEventListener("reset", function () {
