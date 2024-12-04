@@ -94,26 +94,6 @@ document.getElementById("calculateBtn").addEventListener("click", function() { /
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Add event listener for reset button
 document.getElementById("bmiform").addEventListener("reset", function () {
     // Clear input fields
