@@ -29,6 +29,10 @@ ol {
     gap: 64px;
 }
 
+.section > section {
+    width: 50%;
+}
+
 .flex {
     display: flex;
 }
@@ -131,6 +135,11 @@ button {
     border-radius: 4px;
 }
 
+button:active {
+    background-color: white;
+    opacity: 0.7;
+}
+
 .line-button {
     border: 1px solid #CDD7E3;
     color: #4C586A;
@@ -141,19 +150,16 @@ button {
     background-color: #CDD7E3;
 }
 
-.disabled-button {
+button:disabled {
     color: #CDD7E3;
     background-color: #CDD7E3;
 }
 
 
 /* color style button */
-.white {
-    color: white;
-}
-
 .blue {
     background-color: #0994DD;
+    color: white;
 }
 
 .blue:hover {
@@ -161,6 +167,7 @@ button {
 }
 
 .green {
+    color: white;
     background-color: #19AE48;
 }
 
@@ -170,7 +177,6 @@ button {
 
 
 /* responsive web */
-@media screen {
-    
-}
+@media only screen and (max-width:600px) {
 
+}
